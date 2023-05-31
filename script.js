@@ -14,7 +14,7 @@ function saveFile() {
             files.push(fileData);
             localStorage.setItem("files", JSON.stringify(files));
             displayFiles();
-            alert("File saved to local storage.");
+            alert("File saved to the cloud.");
         }
     }
 }
@@ -38,7 +38,7 @@ function displayFiles() {
 function clearFiles() {
     localStorage.removeItem("files");
     displayFiles();
-    alert("All files removed from local storage.");
+    alert("All files removed from the cloud.");
 }
 
 displayFiles();
